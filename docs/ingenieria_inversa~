@@ -1,0 +1,48 @@
+#Modificar el circuito del tensiometro digital poniendo un LPC1769, una SD, pines para configuración.
+
+
+#En el circuito original se tienen las siguientes conexiones al MICRO.
+
+Buzzer		<-	20.PLMA
+
+LED		<-	21.PLMB
+
+Salida reg +5v	->	10.VDD
+
+#El regulador se alimenta a bateria +9v.(MC78L05ACP)
+
+Salida sensor	->	5.PD5/AN5  #SENSOR MPX5050GP
+
+Salida filtro	->	4.PD6/AN6
+
++5V		->	PD0/AN0,PD1/AN1,PD2/AN2,PD3/AN3,PD4/AN4,PD7/AN7
+
+52.TDO		<->	50.RD
+
+22.TCAP1	<->	23.TCAP2
+
++5V		-> 	19./IRQ
+
+16.OSC1		<-> 	17.OSC2  #EN EL MEDIO VA EL CRISTAL.
+
+DIV RES		-> 	8.VRH
+
+DIV RES GND 	->	7.VRL
+
+RESET 		-> 	18./RESET #MODULO MC34064
+
+
+PC0 A PC7 ESTÁN CONECTADOS AL DISPLAY
+PB0 A PB7 ESTÁN CONECTADOS AL DISPLAY
+PA0 A PA7 ESTÁN CONECTADOS AL DISPLAY
+
+
+
+
+#La idea es buscar los pines análogos en el LPC1769.
+
+#-----------------------------------------------------------------------------------------------------
+
+Los puertos PD son del ADC
+
+
