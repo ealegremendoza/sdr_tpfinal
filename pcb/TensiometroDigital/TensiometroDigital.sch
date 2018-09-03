@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+LIBS:TensiometroDigital-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SDR - TP Final: Tensiómetro DIgital"
+Date "2018-09-03"
+Rev "A"
+Comp "UTN - FRBA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_NXP_LPC:LPC1769FBD100 U?
+U 1 1 5B8CA89B
+P 7400 3650
+F 0 "U?" H 7400 1064 50  0000 C CNN
+F 1 "LPC1769FBD100" H 7400 973 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8700 6200 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf" H 7400 3550 50  0001 C CNN
+	1    7400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CA8F1
+P 9200 2150
+F 0 "R?" H 9270 2196 50  0000 L CNN
+F 1 "R" H 9270 2105 50  0000 L CNN
+F 2 "" V 9130 2150 50  0001 C CNN
+F 3 "~" H 9200 2150 50  0001 C CNN
+	1    9200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5B8CA95E
+P 9200 2600
+F 0 "D?" V 9238 2483 50  0000 R CNN
+F 1 "LED" V 9147 2483 50  0000 R CNN
+F 2 "" H 9200 2600 50  0001 C CNN
+F 3 "~" H 9200 2600 50  0001 C CNN
+	1    9200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TensiometroDigital:MPX5050GP U?
+U 1 1 5B8CB252
+P 1350 1300
+F 0 "U?" H 1210 1096 50  0000 R CNN
+F 1 "MPX5050GP" H 1210 1005 50  0000 R CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 800  900  0    50   ~ 0
+#DUDAD CON MODELO. MODELO NO COINCIDE CON PINOUT DATASHEET\n\n
+Text Notes 4700 750  0    50   ~ 0
+¿A qué pines conectar cada cosa?
+$Comp
+L Device:Buzzer BZ?
+U 1 1 5B8CB4C8
+P 9300 3850
+F 0 "BZ?" H 9453 3879 50  0000 L CNN
+F 1 "Buzzer" H 9453 3788 50  0000 L CNN
+F 2 "" V 9275 3950 50  0001 C CNN
+F 3 "~" V 9275 3950 50  0001 C CNN
+	1    9300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 1 1 5B8CB67C
+P 4050 2850
+F 0 "U?" H 4100 3050 50  0000 C CNN
+F 1 "LM324" H 4150 3150 50  0000 C CNN
+F 2 "" H 4000 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4100 3050 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CB737
+P 3200 2200
+F 0 "R?" H 3270 2246 50  0000 L CNN
+F 1 "R" H 3270 2155 50  0000 L CNN
+F 2 "" V 3130 2200 50  0001 C CNN
+F 3 "~" H 3200 2200 50  0001 C CNN
+	1    3200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CB789
+P 3200 1800
+F 0 "R?" H 3270 1846 50  0000 L CNN
+F 1 "R" H 3270 1755 50  0000 L CNN
+F 2 "" V 3130 1800 50  0001 C CNN
+F 3 "~" H 3200 1800 50  0001 C CNN
+	1    3200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CB7DE
+P 3450 2550
+F 0 "R?" H 3380 2504 50  0000 R CNN
+F 1 "R" H 3380 2595 50  0000 R CNN
+F 2 "" V 3380 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5B8CBCA6
+P 2900 2750
+F 0 "C?" V 3152 2750 50  0000 C CNN
+F 1 "CP1" V 3061 2750 50  0000 C CNN
+F 2 "" H 2900 2750 50  0001 C CNN
+F 3 "~" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5B8CBCF8
+P 3650 4100
+F 0 "C?" H 3765 4146 50  0000 L CNN
+F 1 "CP1" H 3765 4055 50  0000 L CNN
+F 2 "" H 3650 4100 50  0001 C CNN
+F 3 "~" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CBD5E
+P 3650 3750
+F 0 "R?" H 3720 3796 50  0000 L CNN
+F 1 "R" H 3720 3705 50  0000 L CNN
+F 2 "" V 3580 3750 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U?
+U 5 1 5B8CBE44
+P 4050 2850
+F 0 "U?" H 4008 2896 50  0000 L CNN
+F 1 "LM324" H 4008 2805 50  0000 L CNN
+F 2 "" H 4000 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4100 3050 50  0001 C CNN
+	5    4050 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 750  5000 0    50   ~ 0
+#DUDA. Esta bien colocar los pines de alimentacion de 324 asi no más? Problemas con DRC ?
+$Comp
+L power:GND #PWR?
+U 1 1 5B8CC150
+P 3650 4300
+F 0 "#PWR?" H 3650 4050 50  0001 C CNN
+F 1 "GND" H 3655 4127 50  0000 C CNN
+F 2 "" H 3650 4300 50  0001 C CNN
+F 3 "" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B8CC7EB
+P 3200 2400
+F 0 "#PWR?" H 3200 2150 50  0001 C CNN
+F 1 "GND" H 3205 2227 50  0000 C CNN
+F 2 "" H 3200 2400 50  0001 C CNN
+F 3 "" H 3200 2400 50  0001 C CNN
+	1    3200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8CCCE0
+P 4350 3500
+F 0 "R?" V 4143 3500 50  0000 C CNN
+F 1 "R" V 4234 3500 50  0000 C CNN
+F 2 "" V 4280 3500 50  0001 C CNN
+F 3 "~" H 4350 3500 50  0001 C CNN
+	1    4350 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B8CCD93
+P 3950 3200
+F 0 "#PWR?" H 3950 2950 50  0001 C CNN
+F 1 "GND" H 3955 3027 50  0000 C CNN
+F 2 "" H 3950 3200 50  0001 C CNN
+F 3 "" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3200 3950 3150
+Wire Wire Line
+	3650 2950 3750 2950
+Wire Wire Line
+	3650 3900 3650 3950
+Wire Wire Line
+	3650 4250 3650 4300
+Wire Wire Line
+	4200 3500 3650 3500
+Wire Wire Line
+	3650 2950 3650 3500
+Wire Wire Line
+	3650 3600 3650 3500
+Connection ~ 3650 3500
+Wire Wire Line
+	4500 3500 4650 3500
+Wire Wire Line
+	4650 3500 4650 2850
+Wire Wire Line
+	4650 2850 4350 2850
+Wire Wire Line
+	3750 2750 3450 2750
+Wire Wire Line
+	3450 2750 3450 2700
+Connection ~ 3450 2750
+Wire Wire Line
+	3450 2750 3050 2750
+Wire Wire Line
+	3450 2400 3450 2000
+Wire Wire Line
+	3450 2000 3200 2000
+Wire Wire Line
+	3200 2000 3200 2050
+Wire Wire Line
+	3200 1950 3200 2000
+Connection ~ 3200 2000
+Wire Wire Line
+	3200 2400 3200 2350
+Wire Wire Line
+	2750 2750 2550 2750
+Wire Wire Line
+	2550 2750 2550 1550
+Wire Wire Line
+	2550 1550 2300 1550
+$Comp
+L power:+5V #PWR?
+U 1 1 5B8CE542
+P 3950 2450
+F 0 "#PWR?" H 3950 2300 50  0001 C CNN
+F 1 "+5V" H 3965 2623 50  0000 C CNN
+F 2 "" H 3950 2450 50  0001 C CNN
+F 3 "" H 3950 2450 50  0001 C CNN
+	1    3950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2550 3950 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 5B8CE8A9
+P 1750 1100
+F 0 "#PWR?" H 1750 950 50  0001 C CNN
+F 1 "+5V" H 1765 1273 50  0000 C CNN
+F 2 "" H 1750 1100 50  0001 C CNN
+F 3 "" H 1750 1100 50  0001 C CNN
+	1    1750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1200 1750 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5B8CED5E
+P 1750 1950
+F 0 "#PWR?" H 1750 1700 50  0001 C CNN
+F 1 "GND" H 1755 1777 50  0000 C CNN
+F 2 "" H 1750 1950 50  0001 C CNN
+F 3 "" H 1750 1950 50  0001 C CNN
+	1    1750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1950 1750 1900
+$Comp
+L power:+5V #PWR?
+U 1 1 5B8CF2FB
+P 3200 1550
+F 0 "#PWR?" H 3200 1400 50  0001 C CNN
+F 1 "+5V" H 3215 1723 50  0000 C CNN
+F 2 "" H 3200 1550 50  0001 C CNN
+F 3 "" H 3200 1550 50  0001 C CNN
+	1    3200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1550 3200 1650
+Text Notes 9550 4700 0    50   ~ 0
+#cambiar el LCD
+$EndSCHEMATC
