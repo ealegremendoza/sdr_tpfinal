@@ -1,0 +1,204 @@
+EESchema Schematic File Version 2
+LIBS:TensiometroDigital-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_NXP_LPC
+LIBS:mc34064
+LIBS:display_nokia5110
+LIBS:lm2940
+LIBS:lm2575
+LIBS:TensiometroDigital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Buzzer BZ?
+U 1 1 5BBF718D
+P 7050 3700
+F 0 "BZ?" H 7200 3750 50  0000 L CNN
+F 1 "Buzzer-5V" H 7200 3650 50  0000 L CNN
+F 2 "" V 7025 3800 50  0001 C CNN
+F 3 "" V 7025 3800 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5BBF7208
+P 6000 3450
+F 0 "R?" H 5850 3400 50  0000 C CNN
+F 1 "220R" H 5800 3500 50  0000 C CNN
+F 2 "" V 5930 3450 50  0001 C CNN
+F 3 "" H 6000 3450 50  0001 C CNN
+	1    6000 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BBF7298
+P 6000 4000
+F 0 "#PWR?" H 6000 3750 50  0001 C CNN
+F 1 "GND" H 6000 3850 50  0000 C CNN
+F 2 "" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BBF72B2
+P 6850 4000
+F 0 "#PWR?" H 6850 3750 50  0001 C CNN
+F 1 "GND" H 6850 3850 50  0000 C CNN
+F 2 "" H 6850 4000 50  0001 C CNN
+F 3 "" H 6850 4000 50  0001 C CNN
+	1    6850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4000 6850 3800
+Wire Wire Line
+	6850 3800 6950 3800
+Wire Wire Line
+	6000 3600 6000 3650
+Wire Wire Line
+	6000 3950 6000 4000
+Text HLabel 4300 3700 0    60   Input ~ 0
+LED_BUZZER
+Text Notes 5350 2650 0    79   ~ 16
+INDICADORES
+$Comp
+L BC557 Q?
+U 1 1 5BC1217A
+P 5500 3350
+F 0 "Q?" V 5750 3200 50  0000 L CNN
+F 1 "BC557" V 5750 3350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5700 3275 50  0001 L CIN
+F 3 "" H 5500 3350 50  0001 L CNN
+	1    5500 3350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6850 3250 6850 3600
+Wire Wire Line
+	6850 3600 6950 3600
+Wire Wire Line
+	5500 3700 5500 3550
+Wire Wire Line
+	4750 3700 5500 3700
+$Comp
+L R R?
+U 1 1 5BC12359
+P 4900 3450
+F 0 "R?" H 5050 3500 50  0000 C CNN
+F 1 "10K" H 5050 3400 50  0000 C CNN
+F 2 "" V 4830 3450 50  0001 C CNN
+F 3 "" H 4900 3450 50  0001 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3600 4900 3700
+Wire Wire Line
+	4900 3100 4900 3300
+Wire Wire Line
+	4900 3250 5300 3250
+$Comp
+L +5V #PWR?
+U 1 1 5BC123C6
+P 4900 3100
+F 0 "#PWR?" H 4900 2950 50  0001 C CNN
+F 1 "+5V" H 4900 3240 50  0000 C CNN
+F 2 "" H 4900 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3250
+$Comp
+L R R?
+U 1 1 5BC12413
+P 4600 3700
+F 0 "R?" V 4500 3700 50  0000 C CNN
+F 1 "4.7K" V 4700 3700 50  0000 C CNN
+F 2 "" V 4530 3700 50  0001 C CNN
+F 3 "" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 3700 4300 3700
+Connection ~ 4900 3700
+$Comp
+L LED D?
+U 1 1 5BBF7221
+P 6000 3800
+F 0 "D?" V 6050 3600 50  0000 C CNN
+F 1 "LED" V 5900 3600 50  0000 C CNN
+F 2 "" H 6000 3800 50  0001 C CNN
+F 3 "" H 6000 3800 50  0001 C CNN
+	1    6000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_SPST SW?
+U 1 1 5BC13948
+P 6400 3250
+F 0 "SW?" H 6250 3400 50  0000 C CNN
+F 1 "SW_SPST" H 6600 3400 50  0000 C CNN
+F 2 "" H 6400 3250 50  0001 C CNN
+F 3 "" H 6400 3250 50  0001 C CNN
+	1    6400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3250 6850 3250
+Wire Wire Line
+	6000 3300 6000 3250
+Wire Wire Line
+	5700 3250 6200 3250
+Connection ~ 6000 3250
+Text Notes 7000 3150 0    60   ~ 0
+Activar/Desactivar señal sonora.
+$EndSCHEMATC

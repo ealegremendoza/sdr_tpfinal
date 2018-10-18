@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2
+LIBS:TensiometroDigital-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_NXP_LPC
+LIBS:mc34064
+LIBS:display_nokia5110
+LIBS:lm2940
+LIBS:lm2575
+LIBS:TensiometroDigital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM2575-3.3 U?
+U 1 1 5BBF9E7C
+P 6050 2950
+F 0 "U?" H 6450 3300 50  0000 C CNN
+F 1 "LM2575-3.3" H 5850 3300 50  0000 C CNN
+F 2 "" H 6050 2950 50  0001 C CNN
+F 3 "" H 6050 2950 50  0001 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2940-5V U?
+U 1 1 5BBF9EB4
+P 6050 4650
+F 0 "U?" H 5700 4950 50  0000 C CNN
+F 1 "LM2940-5V" H 6200 4950 50  0000 C CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "" H 6050 4950 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5BBFA0AA
+P 5150 4850
+F 0 "C?" H 5175 4950 50  0000 L CNN
+F 1 "0.47uF" H 5175 4750 50  0000 L CNN
+F 2 "" H 5188 4700 50  0001 C CNN
+F 3 "" H 5150 4850 50  0001 C CNN
+	1    5150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5BBFA0C7
+P 7050 4850
+F 0 "C?" H 7075 4950 50  0000 L CNN
+F 1 "47uF" H 7075 4750 50  0000 L CNN
+F 2 "" H 7088 4700 50  0001 C CNN
+F 3 "" H 7050 4850 50  0001 C CNN
+	1    7050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BBFA15A
+P 6050 5450
+F 0 "#PWR?" H 6050 5200 50  0001 C CNN
+F 1 "GND" H 6050 5300 50  0000 C CNN
+F 2 "" H 6050 5450 50  0001 C CNN
+F 3 "" H 6050 5450 50  0001 C CNN
+	1    6050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5BBFA36B
+P 7600 4400
+F 0 "#PWR?" H 7600 4250 50  0001 C CNN
+F 1 "+5V" H 7600 4540 50  0000 C CNN
+F 2 "" H 7600 4400 50  0001 C CNN
+F 3 "" H 7600 4400 50  0001 C CNN
+	1    7600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5BBFA387
+P 5050 3250
+F 0 "C?" H 5075 3350 50  0000 L CNN
+F 1 "100uF" H 5075 3150 50  0000 L CNN
+F 2 "" H 5088 3100 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BBFA402
+P 5800 3750
+F 0 "#PWR?" H 5800 3500 50  0001 C CNN
+F 1 "GND" H 5800 3600 50  0000 C CNN
+F 2 "" H 5800 3750 50  0001 C CNN
+F 3 "" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5BBFA42F
+P 6700 3350
+F 0 "D?" V 6600 3500 50  0000 C CNN
+F 1 "1N5817" V 6800 3600 50  0000 C CNN
+F 2 "" H 6700 3350 50  0001 C CNN
+F 3 "" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L L L?
+U 1 1 5BBFA472
+P 7150 3100
+F 0 "L?" V 7250 3100 50  0000 C CNN
+F 1 "330uH" V 7050 3100 50  0000 C CNN
+F 2 "" H 7150 3100 50  0001 C CNN
+F 3 "" H 7150 3100 50  0001 C CNN
+	1    7150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5BBFA50E
+P 7600 3350
+F 0 "C?" H 7625 3450 50  0000 L CNN
+F 1 "330uF" H 7625 3250 50  0000 L CNN
+F 2 "" H 7638 3200 50  0001 C CNN
+F 3 "" H 7600 3350 50  0001 C CNN
+	1    7600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5BBFA53D
+P 8050 2850
+F 0 "#PWR?" H 8050 2700 50  0001 C CNN
+F 1 "+3V3" H 8050 2990 50  0000 C CNN
+F 2 "" H 8050 2850 50  0001 C CNN
+F 3 "" H 8050 2850 50  0001 C CNN
+	1    8050 2850
+	1    0    0    -1  
+$EndComp
+Text Label 7300 4650 0    60   ~ 0
+5V
+Wire Wire Line
+	5150 4700 5150 4650
+Wire Wire Line
+	4500 4650 5150 4650
+Wire Wire Line
+	5150 4650 5550 4650
+Wire Wire Line
+	6550 4650 7050 4650
+Wire Wire Line
+	7050 4650 7600 4650
+Wire Wire Line
+	7600 4650 8050 4650
+Wire Wire Line
+	7050 4650 7050 4700
+Wire Wire Line
+	7600 4650 7600 4400
+Connection ~ 7050 4650
+Wire Wire Line
+	6050 5000 6050 5050
+Wire Wire Line
+	6050 5050 6050 5400
+Wire Wire Line
+	6050 5400 6050 5450
+Connection ~ 5150 4650
+Wire Wire Line
+	4500 5050 5150 5050
+Wire Wire Line
+	5150 5050 6050 5050
+Wire Wire Line
+	6050 5050 7050 5050
+Wire Wire Line
+	7050 5050 7050 5000
+Connection ~ 6050 5050
+Wire Wire Line
+	5150 5050 5150 5000
+Connection ~ 5150 5050
+Wire Wire Line
+	5050 2950 5050 3100
+Wire Wire Line
+	4500 2950 5050 2950
+Wire Wire Line
+	5050 2950 5500 2950
+Wire Wire Line
+	5050 3400 5050 3600
+Wire Wire Line
+	4500 3600 5050 3600
+Wire Wire Line
+	5050 3600 5800 3600
+Wire Wire Line
+	5800 3600 6200 3600
+Wire Wire Line
+	6200 3600 6700 3600
+Wire Wire Line
+	6700 3600 7600 3600
+Wire Wire Line
+	6200 3600 6200 3350
+Wire Wire Line
+	5800 3350 5800 3600
+Wire Wire Line
+	5800 3600 5800 3750
+Connection ~ 5800 3600
+Wire Wire Line
+	6700 3600 6700 3500
+Connection ~ 6200 3600
+Wire Wire Line
+	6700 3200 6700 3100
+Wire Wire Line
+	6600 3100 6700 3100
+Wire Wire Line
+	6700 3100 7000 3100
+Connection ~ 6700 3100
+Wire Wire Line
+	7600 3600 7600 3500
+Connection ~ 6700 3600
+Wire Wire Line
+	7600 2800 7600 3100
+Wire Wire Line
+	7600 3100 7600 3200
+Wire Wire Line
+	7300 3100 7600 3100
+Wire Wire Line
+	7600 3100 8050 3100
+Wire Wire Line
+	8050 3100 8400 3100
+Wire Wire Line
+	7600 2800 6600 2800
+Connection ~ 7600 3100
+Wire Wire Line
+	8050 3100 8050 2850
+Text Label 7800 3100 0    60   ~ 0
+3V3
+Connection ~ 5050 2950
+Connection ~ 5050 3600
+Text Notes 5700 1850 0    60   ~ 0
+ALIMENTACIÓN\n
+Text Label 4500 2950 0    60   ~ 0
+V+
+Text Label 4500 3600 0    60   ~ 0
+V-
+Text Label 4500 4650 0    60   ~ 0
+V+
+Text Label 4500 5050 0    60   ~ 0
+V-
+$Comp
+L Battery BT?
+U 1 1 5BBFCD5D
+P 3350 4150
+F 0 "BT?" H 3450 4250 50  0000 L CNN
+F 1 "Battery" H 3450 4150 50  0000 L CNN
+F 2 "" V 3350 4210 50  0001 C CNN
+F 3 "" V 3350 4210 50  0001 C CNN
+	1    3350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3950 3350 3750
+Wire Wire Line
+	3350 3750 3750 3750
+Wire Wire Line
+	3350 4350 3350 4500
+Wire Wire Line
+	3350 4500 3750 4500
+Text Label 3750 3750 0    60   ~ 0
+V+
+Text Label 3750 4500 0    60   ~ 0
+V-
+Text Notes 8700 3150 0    60   ~ 0
+Nota para PCB: \nAmbos capacitores y el diodo deben ubicarse \nlo más próximo posible al regulador.
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5BBFE276
+P 6450 5300
+F 0 "#FLG?" H 6450 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 5450 50  0000 C CNN
+F 2 "" H 6450 5300 50  0001 C CNN
+F 3 "" H 6450 5300 50  0001 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5BBFE2A5
+P 8050 4400
+F 0 "#FLG?" H 8050 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 8050 4550 50  0000 C CNN
+F 2 "" H 8050 4400 50  0001 C CNN
+F 3 "" H 8050 4400 50  0001 C CNN
+	1    8050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5BBFE301
+P 8400 2850
+F 0 "#FLG?" H 8400 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 8400 3000 50  0000 C CNN
+F 2 "" H 8400 2850 50  0001 C CNN
+F 3 "" H 8400 2850 50  0001 C CNN
+	1    8400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3100 8400 2850
+Connection ~ 8050 3100
+Wire Wire Line
+	8050 4650 8050 4400
+Connection ~ 7600 4650
+Wire Wire Line
+	6450 5300 6450 5400
+Wire Wire Line
+	6450 5400 6050 5400
+Connection ~ 6050 5400
+Wire Wire Line
+	6450 5300 6450 5300
+$EndSCHEMATC

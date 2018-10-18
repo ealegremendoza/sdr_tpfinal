@@ -1,0 +1,13 @@
+https://www.algissalys.com/how-to/nokia-5110-lcd-on-raspberry-pi
+
+Raspberry PI (physical pins)		5110 LCD
+
+18	GPIO 24				RST (RESET)
+24	SPI_CE0				CE (CHIP ENEABLE)
+16 	GPIO 23				DC (DATA)
+19	SPI_MOSI			DIN
+23	SPI_SCLK			CLK
+1	VCC 3.3V			VCC
+11	GPIO 17				LIGHT
+6	GND				GND
+
