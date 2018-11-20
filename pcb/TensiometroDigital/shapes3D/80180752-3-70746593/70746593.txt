@@ -1,0 +1,14 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"59-212";"";
+"TraceParts.PartVersion";"1.0.2";"";
+"SUPPLIER";"ITW Switches";"";
+"TraceParts.PartStatus";"Published";"";
+"ALLIED_STOCK_NUMBER";"70746593";"";
+"TraceParts.PartNumber";"10-11012018-128873";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"Push Button Switch, NO, Panel Mount, Momentary";"";
+"TraceParts.InstanceId";"10-11012018-128873B2IHEVS0PDLUVOY5NB30GLV7";"";
+"TraceParts.PartTitle";"Push Button Switch, NO, Panel Mount, Momentary";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"ALLIED_ELECTRONICS:/ALLIED_ELECTRONICS/PSSS_428047/PSS_428057/PSF_428167/10-11012018-128873";"";

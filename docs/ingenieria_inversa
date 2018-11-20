@@ -25,9 +25,9 @@ Salida filtro	->	4.PD6/AN6
 
 16.OSC1		<-> 	17.OSC2  #EN EL MEDIO VA EL CRISTAL.
 
-DIV RES		-> 	8.VRH
+DIV RES		-> 	8.VRH  The VRH pin is the positive reference voltage for the A/D converter.
 
-DIV RES GND 	->	7.VRL
+DIV RES GND 	->	7.VRL  The VRL pin is the negative reference voltage for the A/D converter.
 
 RESET 		-> 	18./RESET #MODULO MC34064
 

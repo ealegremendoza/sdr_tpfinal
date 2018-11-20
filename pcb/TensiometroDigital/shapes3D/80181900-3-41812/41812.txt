@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.3";"";
+"SUPPLIER";"NKK";"";
+"TraceParts.PartStatus";"Published";"";
+"RS_STOCK_NUMBER";"4289336";"";
+"REVISION";"A";"";
+"DESIGN";"Rocker switch, 10A DPDT Black";"";
+"TraceParts.InstanceId";"10-02092014-0991392OZRDCLP2SP99NGGLITT8L9DY";"";
+"TraceParts.PartTitle";"Rocker switch, 10A DPDT Black";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.PartNumber";"10-02092014-099139";"";
+"REFERENCE";"JW-M22RKK";"";
+"TIMESTAMP";"01/09/2014 16:25";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.ClassPath";"/F_RS_COMPONENTS/PSSS_428047/PSS_428059/PSF_428186/";"";

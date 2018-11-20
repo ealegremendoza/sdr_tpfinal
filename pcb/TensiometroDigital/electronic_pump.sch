@@ -1,0 +1,245 @@
+EESchema Schematic File Version 2
+LIBS:TensiometroDigital-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_NXP_LPC
+LIBS:mc34064
+LIBS:display_nokia5110
+LIBS:lm2940
+LIBS:lm2575
+LIBS:bav199
+LIBS:mpxv5050gp
+LIBS:lm8364
+LIBS:TensiometroDigital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title "TENSIÓMETRO DIGITAL"
+Date "2018-11-20"
+Rev "A"
+Comp "UTN - FRBA"
+Comment1 "Curso: R1032"
+Comment2 "Leg.: 153204-2"
+Comment3 "Autor: Alegre Mendoza Ezequiel"
+Comment4 "SDR Proyecto Final"
+$EndDescr
+Wire Wire Line
+	2450 3700 2900 3700
+Text HLabel 2450 3700 0    60   Input ~ 0
+BOMBA
+$Comp
+L 4N25 U2
+U 1 1 5BE1947D
+P 3950 3800
+F 0 "U2" H 3750 4000 50  0000 L CNN
+F 1 "4N25" H 3950 4000 50  0000 L CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 3750 3600 50  0001 L CIN
+F 3 "" H 3950 3800 50  0001 L CNN
+F 4 "4N35" H 3950 3800 60  0001 C CNN "manf#"
+	1    3950 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 3700
+$Comp
+L D D9
+U 1 1 5BE194CD
+P 4550 3400
+F 0 "D9" H 4550 3500 50  0000 C CNN
+F 1 "1N4001" H 4550 3300 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4550 3400 50  0001 C CNN
+F 3 "" H 4550 3400 50  0001 C CNN
+F 4 "1N4001-T" H 4550 3400 60  0001 C CNN "manf#"
+	1    4550 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3550 4550 3800
+Wire Wire Line
+	4550 3800 4250 3800
+$Comp
+L Q_NPN_BCE Q3
+U 1 1 5BE1950B
+P 5100 3900
+F 0 "Q3" H 5300 3950 50  0000 L CNN
+F 1 "TIP31" H 5300 3850 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5300 4000 50  0001 C CNN
+F 3 "" H 5100 3900 50  0001 C CNN
+F 4 "TIP31" H 5100 3900 60  0001 C CNN "manf#"
+	1    5100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3900 4250 3900
+Wire Wire Line
+	4550 3050 4550 3250
+Wire Wire Line
+	5200 3350 5200 3700
+$Comp
+L Screw_Terminal_01x02 J5
+U 1 1 5BE195A1
+P 5700 3350
+F 0 "J5" H 5700 3450 50  0000 C CNN
+F 1 "AIR PUMP" H 5700 3150 50  0000 C CNN
+F 2 "footprints:TerminalBlock_bornier-2_P5.08mm" H 5700 3350 50  0001 C CNN
+F 3 "https://www.ebay.com/itm/DC3V-6V-5V-Koge-Mini-370-Motor-Air-Pump-Blood-Pressure-Oxygen-Pump-Fish-Tank-DIY-/273016157801" H 5700 3350 50  0001 C CNN
+F 4 "1776493-2" H 5700 3350 60  0001 C CNN "manf#"
+	1    5700 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5500 3350 5200 3350
+Wire Wire Line
+	5200 3250 5500 3250
+Wire Wire Line
+	5200 2800 5200 3250
+Wire Wire Line
+	5200 3050 4550 3050
+Connection ~ 5200 3050
+Wire Wire Line
+	5200 4100 5200 4350
+$Comp
+L GND #PWR070
+U 1 1 5BE199A8
+P 5200 4350
+F 0 "#PWR070" H 5200 4100 50  0001 C CNN
+F 1 "GND" H 5200 4200 50  0000 C CNN
+F 2 "" H 5200 4350 50  0001 C CNN
+F 3 "" H 5200 4350 50  0001 C CNN
+	1    5200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5BE19A3F
+P 3050 3700
+F 0 "R10" V 3130 3700 50  0000 C CNN
+F 1 "330R" V 2950 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2980 3700 50  0001 C CNN
+F 3 "" H 3050 3700 50  0001 C CNN
+F 4 "SG73G2ATTD3300D" V 3050 3700 60  0001 C CNN "manf#"
+	1    3050 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 3700 3650 3700
+Text HLabel 6750 3500 0    60   Input ~ 0
+VALVULA
+$Comp
+L Q_NPN_BCE Q2
+U 1 1 5BE1A285
+P 7500 3500
+F 0 "Q2" H 7700 3550 50  0000 L CNN
+F 1 "TIP31" H 7700 3450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 7700 3600 50  0001 C CNN
+F 3 "" H 7500 3500 50  0001 C CNN
+F 4 "TIP31" H 7500 3500 60  0001 C CNN "manf#"
+	1    7500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3500 6750 3500
+Wire Wire Line
+	7600 3300 7600 2800
+Wire Wire Line
+	7600 3700 7600 4050
+$Comp
+L Screw_Terminal_01x02 J4
+U 1 1 5BE1A3FC
+P 7900 4050
+F 0 "J4" H 7900 4150 50  0000 C CNN
+F 1 "VALVE" H 7900 3850 50  0000 C CNN
+F 2 "footprints:TerminalBlock_bornier-2_P5.08mm" H 7900 4050 50  0001 C CNN
+F 3 "https://www.ebay.com/itm/DC-6V-Micro-Solenoid-Valve-Exhaust-Air-Valve-Blood-Pressure-Monitor-Normall-Open-/192122676169" H 7900 4050 50  0001 C CNN
+F 4 "1776493-2" H 7900 4050 60  0001 C CNN "manf#"
+	1    7900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4050 7700 4050
+Wire Wire Line
+	7700 4150 7600 4150
+Wire Wire Line
+	7600 4150 7600 4350
+$Comp
+L GND #PWR071
+U 1 1 5BE1A460
+P 7600 4350
+F 0 "#PWR071" H 7600 4100 50  0001 C CNN
+F 1 "GND" H 7600 4200 50  0000 C CNN
+F 2 "" H 7600 4350 50  0001 C CNN
+F 3 "" H 7600 4350 50  0001 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR072
+U 1 1 5BE1B7E0
+P 3600 4350
+F 0 "#PWR072" H 3600 4100 50  0001 C CNN
+F 1 "GND" H 3600 4200 50  0000 C CNN
+F 2 "" H 3600 4350 50  0001 C CNN
+F 3 "" H 3600 4350 50  0001 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4350 3600 3900
+Wire Wire Line
+	3600 3900 3650 3900
+$Comp
+L +5V #PWR073
+U 1 1 5BE26670
+P 7600 2800
+F 0 "#PWR073" H 7600 2650 50  0001 C CNN
+F 1 "+5V" H 7600 2940 50  0000 C CNN
+F 2 "" H 7600 2800 50  0001 C CNN
+F 3 "" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR074
+U 1 1 5BE266BD
+P 5200 2800
+F 0 "#PWR074" H 5200 2650 50  0001 C CNN
+F 1 "+5V" H 5200 2940 50  0000 C CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+Text Notes 4700 1750 0    118  ~ 24
+VÁLVULA Y BOMBA DE AIRE
+$EndSCHEMATC

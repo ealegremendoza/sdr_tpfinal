@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-22092010-113789";"";
+"REFERENCE";"A-SD-09-C-0-7-3";"";
+"TraceParts.PartTitle";"SD-card-socket, standard style";"";
+"TraceParts.InstanceId";"10-22092010-11378988DKBLAYL6RUSFONCL7IJM0GO";"";
+"DESIGN";"SD-card-socket, standard style, 15μ“ gold (selective)";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"ASSMANN WSW components";"";
+"TraceParts.PartVersion";"1.1.1";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"ASSMANN:/F_ASSMANN/ASSMANN.010/ASSMANN.010.230/10-22092010-113789";"";

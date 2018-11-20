@@ -1,0 +1,332 @@
+EESchema Schematic File Version 2
+LIBS:TensiometroDigital-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_NXP_LPC
+LIBS:mc34064
+LIBS:display_nokia5110
+LIBS:lm2940
+LIBS:lm2575
+LIBS:bav199
+LIBS:mpxv5050gp
+LIBS:lm8364
+LIBS:TensiometroDigital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 11
+Title "TENSIÓMETRO DIGITAL"
+Date "2018-11-20"
+Rev "A"
+Comp "UTN - FRBA"
+Comment1 "Curso: R1032"
+Comment2 "Leg.: 153204-2"
+Comment3 "Autor: Alegre Mendoza Ezequiel"
+Comment4 "SDR Proyecto Final"
+$EndDescr
+Text Notes 7850 2800 0    60   ~ 12
+RESET MANUAL
+$Comp
+L R R35
+U 1 1 5BDE85EC
+P 7900 3500
+F 0 "R35" V 7800 3500 50  0000 C CNN
+F 1 "4k7" V 8000 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7830 3500 50  0001 C CNN
+F 3 "" H 7900 3500 50  0001 C CNN
+F 4 "SG73G2ATTD4701D" V 7900 3500 60  0001 C CNN "manf#"
+	1    7900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C26
+U 1 1 5BDE85F3
+P 8400 3900
+F 0 "C26" H 8425 4000 50  0000 L CNN
+F 1 "100nF" H 8425 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8438 3750 50  0001 C CNN
+F 3 "" H 8400 3900 50  0001 C CNN
+F 4 "C0805X104J5RACAUTO" H 8400 3900 60  0001 C CNN "manf#"
+	1    8400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_DPST SW5
+U 1 1 5BDE85FA
+P 7800 3950
+F 0 "SW5" H 7800 3650 50  0000 C CNN
+F 1 "SW_DPST" H 7800 3750 50  0000 C CNN
+F 2 "footprints:SW_Tactile_Straight_KSL0Axx1LFTR_edit" H 7800 3950 50  0001 C CNN
+F 3 "" H 7800 3950 50  0001 C CNN
+F 4 "KSL0A411LFTR" H 7800 3950 60  0001 C CNN "manf#"
+	1    7800 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR056
+U 1 1 5BDE8601
+P 7900 4200
+F 0 "#PWR056" H 7900 3950 50  0001 C CNN
+F 1 "GND" H 7900 4050 50  0000 C CNN
+F 2 "" H 7900 4200 50  0001 C CNN
+F 3 "" H 7900 4200 50  0001 C CNN
+	1    7900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR057
+U 1 1 5BDE8607
+P 8150 3200
+F 0 "#PWR057" H 8150 3050 50  0001 C CNN
+F 1 "+3.3V" H 8150 3340 50  0000 C CNN
+F 2 "" H 8150 3200 50  0001 C CNN
+F 3 "" H 8150 3200 50  0001 C CNN
+	1    8150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D8
+U 1 1 5BDE860D
+P 8400 3500
+F 0 "D8" H 8400 3600 50  0000 C CNN
+F 1 "1N4148" H 8400 3400 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P10.16mm_Horizontal" H 8400 3500 50  0001 C CNN
+F 3 "" H 8400 3500 50  0001 C CNN
+F 4 "1N4148" H 8400 3500 60  0001 C CNN "manf#"
+	1    8400 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3300 8400 3300
+Wire Wire Line
+	8400 3300 8400 3350
+Wire Wire Line
+	7900 3300 7900 3350
+Connection ~ 8150 3300
+Wire Wire Line
+	7900 3650 7900 3750
+Wire Wire Line
+	8400 3650 8400 3750
+Wire Wire Line
+	8400 4200 8400 4050
+Wire Wire Line
+	7700 4200 8400 4200
+Wire Wire Line
+	7900 4150 7900 4200
+Wire Wire Line
+	7700 4200 7700 4150
+Connection ~ 7900 4200
+Connection ~ 7900 3700
+Connection ~ 8400 3700
+Wire Wire Line
+	7700 3750 7700 3700
+Wire Wire Line
+	8150 3300 8150 3200
+Wire Wire Line
+	7700 3700 8850 3700
+Text HLabel 8850 3700 2    60   Output ~ 0
+~RESET
+Text Notes 6150 2800 2    60   ~ 12
+START/STOP
+$Comp
+L SW_DPST SW4
+U 1 1 5BDEAD38
+P 5950 3950
+F 0 "SW4" H 5950 3650 50  0000 C CNN
+F 1 "SW_DPST" H 5950 3750 50  0000 C CNN
+F 2 "footprints:SW_Tactile_Straight_KSL0Axx1LFTR_edit" H 5950 3950 50  0001 C CNN
+F 3 "" H 5950 3950 50  0001 C CNN
+F 4 "KSL0A411LFTR" H 5950 3950 60  0001 C CNN "manf#"
+	1    5950 3950
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 5BDEAD3F
+P 5650 4200
+F 0 "#PWR058" H 5650 3950 50  0001 C CNN
+F 1 "GND" H 5650 4050 50  0000 C CNN
+F 2 "" H 5650 4200 50  0001 C CNN
+F 3 "" H 5650 4200 50  0001 C CNN
+	1    5650 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R34
+U 1 1 5BDEAD45
+P 5450 3500
+F 0 "R34" V 5350 3500 50  0000 C CNN
+F 1 "10k" V 5550 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 3500 50  0001 C CNN
+F 3 "" H 5450 3500 50  0001 C CNN
+F 4 "SG73G2ATTD1002D " V 5450 3500 60  0001 C CNN "manf#"
+	1    5450 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR059
+U 1 1 5BDEAD4C
+P 5450 3200
+F 0 "#PWR059" H 5450 3050 50  0001 C CNN
+F 1 "+3.3V" H 5450 3340 50  0000 C CNN
+F 2 "" H 5450 3200 50  0001 C CNN
+F 3 "" H 5450 3200 50  0001 C CNN
+	1    5450 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C25
+U 1 1 5BDEAD52
+P 5450 3900
+F 0 "C25" H 5475 4000 50  0000 L CNN
+F 1 "100nF" H 5475 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5488 3750 50  0001 C CNN
+F 3 "" H 5450 3900 50  0001 C CNN
+F 4 "C0805X104J5RACAUTO" H 5450 3900 60  0001 C CNN "manf#"
+	1    5450 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4200 6050 4150
+Wire Wire Line
+	5450 4200 6050 4200
+Wire Wire Line
+	5850 4150 5850 4200
+Connection ~ 5850 4200
+Wire Wire Line
+	5450 4200 5450 4050
+Connection ~ 5650 4200
+Wire Wire Line
+	5450 3700 6350 3700
+Wire Wire Line
+	5850 3700 5850 3750
+Wire Wire Line
+	6050 3700 6050 3750
+Wire Wire Line
+	5450 3200 5450 3350
+Wire Wire Line
+	5450 3650 5450 3750
+Connection ~ 5850 3700
+Connection ~ 5450 3700
+Connection ~ 6050 3700
+Text HLabel 6350 3700 2    60   Output ~ 0
+~START
+$Comp
+L SW_DPST SW3
+U 1 1 5BDF65E4
+P 3500 3950
+F 0 "SW3" H 3500 3650 50  0000 C CNN
+F 1 "SW_DPST" H 3500 3750 50  0000 C CNN
+F 2 "footprints:SW_Tactile_Straight_KSL0Axx1LFTR_edit" H 3500 3950 50  0001 C CNN
+F 3 "" H 3500 3950 50  0001 C CNN
+F 4 "KSL0A411LFTR" H 3500 3950 60  0001 C CNN "manf#"
+	1    3500 3950
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR060
+U 1 1 5BDF65EA
+P 3200 4200
+F 0 "#PWR060" H 3200 3950 50  0001 C CNN
+F 1 "GND" H 3200 4050 50  0000 C CNN
+F 2 "" H 3200 4200 50  0001 C CNN
+F 3 "" H 3200 4200 50  0001 C CNN
+	1    3200 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R33
+U 1 1 5BDF65F0
+P 3000 3500
+F 0 "R33" V 2900 3500 50  0000 C CNN
+F 1 "10k" V 3100 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2930 3500 50  0001 C CNN
+F 3 "" H 3000 3500 50  0001 C CNN
+F 4 "SG73G2ATTD1002D " V 3000 3500 60  0001 C CNN "manf#"
+	1    3000 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR061
+U 1 1 5BDF65F6
+P 3000 3200
+F 0 "#PWR061" H 3000 3050 50  0001 C CNN
+F 1 "+3.3V" H 3000 3340 50  0000 C CNN
+F 2 "" H 3000 3200 50  0001 C CNN
+F 3 "" H 3000 3200 50  0001 C CNN
+	1    3000 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C24
+U 1 1 5BDF65FC
+P 3000 3900
+F 0 "C24" H 3025 4000 50  0000 L CNN
+F 1 "100nF" H 3025 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3038 3750 50  0001 C CNN
+F 3 "" H 3000 3900 50  0001 C CNN
+F 4 "C0805X104J5RACAUTO" H 3000 3900 60  0001 C CNN "manf#"
+	1    3000 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4200 3600 4150
+Wire Wire Line
+	3000 4200 3600 4200
+Wire Wire Line
+	3400 4150 3400 4200
+Connection ~ 3400 4200
+Wire Wire Line
+	3000 4200 3000 4050
+Connection ~ 3200 4200
+Wire Wire Line
+	3000 3700 3900 3700
+Wire Wire Line
+	3400 3700 3400 3750
+Wire Wire Line
+	3600 3700 3600 3750
+Wire Wire Line
+	3000 3200 3000 3350
+Wire Wire Line
+	3000 3650 3000 3750
+Connection ~ 3400 3700
+Connection ~ 3000 3700
+Connection ~ 3600 3700
+Text HLabel 3900 3700 2    60   Output ~ 0
+~SELECT
+Text Notes 3650 2800 2    60   ~ 12
+SELECCIÓN / MENÚ
+Text Notes 4800 1950 0    118  ~ 24
+INTERFAZ DE USUARIO
+$EndSCHEMATC

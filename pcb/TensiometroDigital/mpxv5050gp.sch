@@ -1,0 +1,197 @@
+EESchema Schematic File Version 2
+LIBS:TensiometroDigital-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_NXP_LPC
+LIBS:mc34064
+LIBS:display_nokia5110
+LIBS:lm2940
+LIBS:lm2575
+LIBS:bav199
+LIBS:mpxv5050gp
+LIBS:lm8364
+LIBS:TensiometroDigital-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 11
+Title "TENSIÓMETRO DIGITAL"
+Date "2018-11-20"
+Rev "A"
+Comp "UTN - FRBA"
+Comment1 "Curso: R1032"
+Comment2 "Leg.: 153204-2"
+Comment3 "Autor: Alegre Mendoza Ezequiel"
+Comment4 "SDR Proyecto Final"
+$EndDescr
+$Comp
+L MPXV5050GP U10
+U 1 1 5BDB538B
+P 4450 3650
+F 0 "U10" H 5150 3750 60  0000 C CNN
+F 1 "MPXV5050GP" H 5300 2950 60  0000 C CNN
+F 2 "footprints:mpxv5050gp_case1369_01" H 4450 3650 60  0001 C CNN
+F 3 "" H 4450 3650 60  0001 C CNN
+F 4 "MPXV5050GP" H 4450 3650 60  0001 C CNN "manf#"
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 7500 3950 2    60   Output ~ 0
+REG_OUT
+$Comp
+L +5V #PWR051
+U 1 1 5BDB5D83
+P 4850 3350
+F 0 "#PWR051" H 4850 3200 50  0001 C CNN
+F 1 "+5V" H 4850 3490 50  0000 C CNN
+F 2 "" H 4850 3350 50  0001 C CNN
+F 3 "" H 4850 3350 50  0001 C CNN
+	1    4850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR052
+U 1 1 5BDB5D9D
+P 4850 4550
+F 0 "#PWR052" H 4850 4300 50  0001 C CNN
+F 1 "GND" H 4850 4400 50  0000 C CNN
+F 2 "" H 4850 4550 50  0001 C CNN
+F 3 "" H 4850 4550 50  0001 C CNN
+	1    4850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 5BDB6141
+P 6550 4450
+F 0 "#PWR053" H 6550 4200 50  0001 C CNN
+F 1 "GND" H 6550 4300 50  0000 C CNN
+F 2 "" H 6550 4450 50  0001 C CNN
+F 3 "" H 6550 4450 50  0001 C CNN
+	1    6550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L BAV199 U11
+U 1 1 5BDB6405
+P 7250 3550
+F 0 "U11" H 7300 3250 60  0000 C CNN
+F 1 "BAV199" H 7400 3650 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7250 3550 60  0001 C CNN
+F 3 "" H 7250 3550 60  0001 C CNN
+F 4 "BAV199HMFHT116" H 7250 3550 60  0001 C CNN "manf#"
+	1    7250 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR054
+U 1 1 5BDB64B4
+P 7500 3150
+F 0 "#PWR054" H 7500 3000 50  0001 C CNN
+F 1 "+3.3V" H 7500 3290 50  0000 C CNN
+F 2 "" H 7500 3150 50  0001 C CNN
+F 3 "" H 7500 3150 50  0001 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR055
+U 1 1 5BDB64E4
+P 7500 3650
+F 0 "#PWR055" H 7500 3400 50  0001 C CNN
+F 1 "GND" H 7500 3500 50  0000 C CNN
+F 2 "" H 7500 3650 50  0001 C CNN
+F 3 "" H 7500 3650 50  0001 C CNN
+	1    7500 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 5100 2450 0    118  ~ 24
+SENSOR DE PRESIÓN
+Wire Wire Line
+	4850 3350 4850 3450
+Wire Wire Line
+	4850 4550 4850 4450
+Wire Wire Line
+	5450 3950 6050 3950
+Wire Wire Line
+	6350 3950 7500 3950
+Wire Wire Line
+	6550 3450 6550 4050
+Wire Wire Line
+	6550 4350 6550 4450
+Connection ~ 6550 3950
+Wire Wire Line
+	6600 3450 6550 3450
+Wire Wire Line
+	7450 3400 7500 3400
+Wire Wire Line
+	7500 3400 7500 3150
+Wire Wire Line
+	7500 3650 7500 3500
+Wire Wire Line
+	7500 3500 7450 3500
+$Comp
+L R R32
+U 1 1 5BDB611A
+P 6550 4200
+F 0 "R32" V 6650 4200 50  0000 C CNN
+F 1 "33K" V 6450 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6480 4200 50  0001 C CNN
+F 3 "" H 6550 4200 50  0001 C CNN
+F 4 "RT0805DRD0733KL" V 6550 4200 60  0001 C CNN "manf#"
+	1    6550 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R31
+U 1 1 5BDB60FB
+P 6200 3950
+F 0 "R31" V 6300 3950 50  0000 C CNN
+F 1 "18k" V 6100 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6130 3950 50  0001 C CNN
+F 3 "" H 6200 3950 50  0001 C CNN
+F 4 "RT0805DRD0718KL" V 6200 3950 60  0001 C CNN "manf#"
+	1    6200 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3950 5750 4800
+Wire Wire Line
+	5750 4800 7500 4800
+Connection ~ 5750 3950
+Text HLabel 7500 4800 2    60   Output ~ 0
+RAW_OUT
+Text Notes 5650 2700 0    79   ~ 16
+MPXV5050GP
+$EndSCHEMATC

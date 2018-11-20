@@ -1,4 +1,4 @@
-update=jue 11 oct 2018 15:41:52 -03
+update=jue 01 nov 2018 23:49:06 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -67,3 +67,6 @@ LibName35=lib/mc34064
 LibName36=lib/display_nokia5110
 LibName37=lib/lm2940
 LibName38=lib/lm2575
+LibName39=lib/bav199
+LibName40=lib/mpxv5050gp
+LibName41=lib/lm8364

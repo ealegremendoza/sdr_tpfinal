@@ -1,0 +1,14 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"TIP31CG";"";
+"TraceParts.PartVersion";"1.0.4";"";
+"SUPPLIER";"ON Semiconductor";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-09032015-134191";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"TO-220, MOLDED, 3 LEAD, JEDEC VARIATION AB - TIP31CG";"";
+"PREFERRED_RS_NUMBER";"0463319P";"";
+"TraceParts.PartTitle";"TO-220, MOLDED, 3 LEAD, JEDEC VARIATION AB - TIP31CG";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:/F_RS_COMPONENTS/PSSS_432964/PSS_433012/PSF_433015/10-09032015-134191";"";
+"TraceParts.InstanceId";"10-09032015-134191583WD14L9PJ6AVXGBSOFAH41A";"";
