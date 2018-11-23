@@ -1,0 +1,32 @@
+Guía de directorios y archivos más importantes:
+
+/TensiometroDigital					-Contiene todo el trabajo práctico.
+	
+	PCB Layout Checklist.xslx			-Checklist
+
+	/BOM						-Contiene la BOM del trabajo práctico. 
+		TensiometroDigital_BOM_LINK_OCTOPART	-Contiene el link a la BOM en octopart.com
+	
+	/GABINETE
+		GABINETE.fcstd1				-Contiene el gabinete creado en FREECAD.
+
+	/GERBERS					-Contiene los archivos gerbers del PCB.
+
+	/INFORME
+		TensiometroDigita_informe.pdf		-Informe del trabajo práctico.
+
+	/PANEL						-Contiene el panelizado del PCB.
+		/panel-gerbers				-Contiene los archivos gerbers del panel.
+
+	/PDFs
+		TensiometroDigital-SCH_v1.pdf		-Esquemáticos del trabajo práctico.
+		TensiometroDIgital-PCB_v1.pdf		-PCB del trabajo práctico.
+		TD-gabinete-base-drawings_v1.pdf	-Drawings de la BASE del gabinete del trabajo práctico.
+		TD-gabinete-tapa-drawings_v1.pdf	-Drawings de la TAPA del gabinete del trabajo práctico.
+
+
+- El resto de los directorios y archivos no mencionados aquí son auxiliares para realizar el trabajo práctico.
+
+
+		
+	
