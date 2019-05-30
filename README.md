@@ -5,14 +5,14 @@
 
 ## Carpetas
 >- *docs*: es encuentran archivos de interés para el proyecto.
-- *pcb*: desarrollo de la placa del proyecto.
+>- *pcb*: desarrollo de la placa del proyecto.
 
 ---
 
 
-### Espero le sea de utilidad.
+Espero le sea de utilidad.
 
-** Ezequiel Alegre **
+Ezequiel Alegre 
 
 >Toda sugerencia será bienvenida.
 
